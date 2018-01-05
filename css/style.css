@@ -1,0 +1,138 @@
+@font-face {
+  font-family: mono;
+  src: url(../fonts/SpaceMono-Regular.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: xkcd;
+  src: url(../fonts/xkcd-script.ttf);
+  font-weight: bold;
+}
+
+html {
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    background-color: white;
+    color: black; 
+    font-family: 'mono';
+    /*background-color: #70C4B1;*/
+    /*background-image:linear-gradient(#a0d1cf,#70C4B1);*/
+    /*overflow-x: scroll;*/
+}
+
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: 1;
+
+}
+
+ 
+.title {
+    font-size: 45px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.description {
+    font-size: 17px;
+}
+ 
+.project {
+    margin: 2.5%;
+    line-height: 3.5rem;
+} 
+
+#links {
+     z-index: 1000;
+     position: relative;
+     display: inline-block;
+}
+#links > a {
+    color: #FF504D;
+    text-decoration: none;
+    margin: 10px;
+   
+}
+
+#links > a: hover {
+    color:  green;
+  
+}
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+   z-index: 1001;
+}
+
+.grey {
+    color: #555;
+}
+/*.teex {
+    position: relative;
+    margin-top: 20%;
+    margin-left: 80%;
+    -webkit-transform: rotate(20deg);
+    font-family: 'xkcd';
+    font-size: 25px; 
+}*/
+
+@media screen and (min-width: 480px) {
+    
+   .container {
+        padding: 30px;
+        padding-right: 50px;
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        /*border: 1px dashed black;*/
+    } 
+    #footer {
+        padding-left: 2.5%;
+        padding-right: 2.5%; 
+
+    }
+}   
+
+@media screen and (max-width: 480px) {
+    
+   .container {
+        margin-top: 35px;
+    } 
+} 
+
+#right {
+}
+
+
+/* #Concrete Flat Button
+==================================================*/
+#clear {
+  /*padding: 5px;*/
+  display:none;
+  position: relative;
+
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #ddd;
+  border: 0;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: mono;
+  color: #444;
+}
+
+#clear:focus {outline:0;}
