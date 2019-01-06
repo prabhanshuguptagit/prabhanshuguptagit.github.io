@@ -82,7 +82,6 @@ sayclear : function() {
 function clearAppend(){
 	if (!clearButton)
 	{
-		console.log('wedwed');
 		document.getElementById('clear').style.display = 'inline';
 		clearButton =true;
 	}
